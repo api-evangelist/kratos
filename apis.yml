@@ -39,7 +39,10 @@ apis:
       - Service Discovery
       - Protocol Buffers
       - Frameworks
-    properties: []
+    properties:
+      - type: JSONSchema
+        url: >-
+          https://raw.githubusercontent.com/api-evangelist/kratos/refs/heads/main/json-schema/kratos-configuration.json
 common:
   - type: Website
     url: https://go-kratos.dev/

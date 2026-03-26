@@ -1,0 +1,159 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/api-evangelist/kratos/json-schema/kratos-configuration.json",
+  "title": "Kratos Service Configuration",
+  "description": "JSON Schema for Kratos microservice framework configuration (kratos.yaml / config.yaml).",
+  "type": "object",
+  "properties": {
+    "server": {
+      "type": "object",
+      "properties": {
+        "http": {
+          "$ref": "#/$defs/ServerConfig"
+        },
+        "grpc": {
+          "$ref": "#/$defs/ServerConfig"
+        }
+      }
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "database": {
+          "type": "object",
+          "properties": {
+            "driver": {
+              "type": "string",
+              "description": "Database driver name."
+            },
+            "source": {
+              "type": "string",
+              "description": "Database connection string."
+            }
+          }
+        },
+        "redis": {
+          "type": "object",
+          "properties": {
+            "addr": {
+              "type": "string",
+              "description": "Redis server address."
+            },
+            "dial_timeout": {
+              "type": "string",
+              "description": "Dial timeout duration."
+            },
+            "read_timeout": {
+              "type": "string",
+              "description": "Read timeout duration."
+            },
+            "write_timeout": {
+              "type": "string",
+              "description": "Write timeout duration."
+            }
+          }
+        }
+      }
+    },
+    "registry": {
+      "type": "object",
+      "properties": {
+        "consul": {
+          "type": "object",
+          "properties": {
+            "address": {
+              "type": "string",
+              "description": "Consul server address."
+            },
+            "scheme": {
+              "type": "string",
+              "default": "http"
+            }
+          }
+        },
+        "etcd": {
+          "type": "object",
+          "properties": {
+            "endpoints": {
+              "type": "array",
+              "items": { "type": "string" },
+              "description": "Etcd endpoints."
+            }
+          }
+        }
+      }
+    },
+    "trace": {
+      "type": "object",
+      "properties": {
+        "endpoint": {
+          "type": "string",
+          "description": "Tracing collector endpoint."
+        },
+        "sampler": {
+          "type": "number",
+          "description": "Sampling rate (0.0 to 1.0)."
+        }
+      }
+    },
+    "log": {
+      "type": "object",
+      "properties": {
+        "level": {
+          "type": "string",
+          "enum": ["DEBUG", "INFO", "WARN", "ERROR", "FATAL"],
+          "description": "Log level."
+        }
+      }
+    }
+  },
+  "$defs": {
+    "ServerConfig": {
+      "type": "object",
+      "properties": {
+        "addr": {
+          "type": "string",
+          "description": "Server listen address (e.g., 0.0.0.0:8000)."
+        },
+        "timeout": {
+          "type": "string",
+          "description": "Server timeout duration."
+        },
+        "middleware": {
+          "type": "object",
+          "properties": {
+            "logging": {
+              "type": "boolean",
+              "description": "Enable logging middleware."
+            },
+            "recovery": {
+              "type": "boolean",
+              "description": "Enable recovery middleware."
+            },
+            "tracing": {
+              "type": "boolean",
+              "description": "Enable tracing middleware."
+            },
+            "metrics": {
+              "type": "boolean",
+              "description": "Enable metrics middleware."
+            }
+          }
+        },
+        "tls": {
+          "type": "object",
+          "properties": {
+            "cert_file": {
+              "type": "string",
+              "description": "Path to TLS certificate file."
+            },
+            "key_file": {
+              "type": "string",
+              "description": "Path to TLS key file."
+            }
+          }
+        }
+      }
+    }
+  }
+}
