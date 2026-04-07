@@ -9,13 +9,13 @@ description: >-
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - Microservices
+  - Cloud Native
+  - Frameworks
   - Go
   - gRPC
-  - Cloud Native
-  - Service Discovery
+  - Microservices
   - Protocol Buffers
-  - Frameworks
+  - Service Discovery
 url: >-
   https://raw.githubusercontent.com/api-evangelist/kratos/refs/heads/main/apis.yml
 created: '2026-03-26'
@@ -32,13 +32,13 @@ apis:
       Protocol Buffers for API definitions.
     humanURL: https://go-kratos.dev/
     tags:
-      - Microservices
+      - Cloud Native
+      - Frameworks
       - Go
       - gRPC
-      - Cloud Native
-      - Service Discovery
+      - Microservices
       - Protocol Buffers
-      - Frameworks
+      - Service Discovery
     properties:
       - type: JSONSchema
         url: >-
