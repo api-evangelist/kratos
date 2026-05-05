@@ -1,0 +1,13 @@
+{
+  "repo": "kratos",
+  "feeds": [
+    {
+      "source": "https://go-kratos.dev/blog/",
+      "feed_url": "https://go-kratos.dev/blog/rss.xml",
+      "saved": 5,
+      "title": "Kratos | Blog"
+    }
+  ],
+  "post_count": 5,
+  "fetched": "2026-05-03T23:30:16Z"
+}
