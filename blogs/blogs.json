@@ -3,11 +3,11 @@
   "feeds": [
     {
       "source": "https://go-kratos.dev/blog/",
-      "feed_url": "https://go-kratos.dev/blog/rss.xml",
-      "saved": 5,
-      "title": "Kratos | Blog"
+      "feed_url": "https://go-kratos.dev/blog/rss",
+      "title": "Kratos | Blog",
+      "saved": 0
     }
   ],
   "post_count": 5,
-  "fetched": "2026-05-03T23:30:16Z"
+  "fetched": "2026-05-09T20:17:51Z"
 }
