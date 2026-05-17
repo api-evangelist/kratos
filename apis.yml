@@ -48,11 +48,11 @@ common:
     url: https://go-kratos.dev/
   - type: Documentation
     url: https://go-kratos.dev/docs/
-  - type: Getting Started
+  - type: GettingStarted
     url: https://go-kratos.dev/docs/getting-started/start/
-  - type: GitHub Organization
+  - type: GitHubOrganization
     url: https://github.com/go-kratos
-  - type: GitHub Repository
+  - type: GitHubRepository
     url: https://github.com/go-kratos/kratos
   - type: Blog
     url: https://go-kratos.dev/blog/
