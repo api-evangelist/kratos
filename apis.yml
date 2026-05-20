@@ -44,6 +44,8 @@ apis:
         url: >-
           https://raw.githubusercontent.com/api-evangelist/kratos/refs/heads/main/json-schema/kratos-configuration.json
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/oryorg
   - type: Website
     url: https://go-kratos.dev/
   - type: Documentation
