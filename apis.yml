@@ -56,6 +56,19 @@ apis:
         url: >-
           https://raw.githubusercontent.com/api-evangelist/kratos/refs/heads/main/json-schema/kratos-configuration.json
 common:
+  - type: IssueTracker
+    url: https://github.com/go-kratos/kratos/issues
+  - type: Releases
+    url: https://github.com/go-kratos/kratos/releases
+  - type: SecurityPolicy
+    url: https://github.com/go-kratos/kratos/blob/main/SECURITY.md
+  - type: CodeOfConduct
+    url: https://github.com/go-kratos/kratos/blob/main/CODE_OF_CONDUCT.md
+  - type: ContributionGuide
+    url: https://github.com/go-kratos/kratos/blob/main/CONTRIBUTING.md
+  - type: License
+    name: MIT
+    url: https://github.com/go-kratos/kratos/blob/main/LICENSE
   - type: DomainSecurity
     url: security/kratos-domain-security.yml
   - type: LinkedIn
