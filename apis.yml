@@ -21,6 +21,14 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/kratos.png
 tags:
+  - Cloud-Native
+  - Frameworks
+  - Go
+  - gRPC
+  - Microservices
+  - Protocol Buffers
+  - Service Discovery
+tags_raw:
   - Cloud Native
   - Frameworks
   - Go
@@ -44,6 +52,14 @@ apis:
       Protocol Buffers for API definitions.
     humanURL: https://go-kratos.dev/
     tags:
+      - Cloud-Native
+      - Frameworks
+      - Go
+      - gRPC
+      - Microservices
+      - Protocol Buffers
+      - Service Discovery
+    tags_raw:
       - Cloud Native
       - Frameworks
       - Go
